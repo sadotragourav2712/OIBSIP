@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body{
+            margin:0px;
+            padding:0px;
+        }
+        .login-img{
+            position: absolute;
+            top:34%;
+            left:43%;
+            z-index: 1;
+        }
+        .login-img img{
+            /* border-left:50% ; */
+            border-bottom-right-radius: 100%;
+            border-top-left-radius: 100%;
+            border-bottom-left-radius: 100%;
+            border-top-right-radius: 100%;
+            
+        }
+        .container{
+            position: absolute;
+            top:40%;
+            left:43%;
+            background-color: black;
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <form action="backend.php">
+        <div class="login-img">
+            <img src="login-img.png" alt="" width="115">
+        </div>
+        <div class="container">
+            <p>UserName</p>
+            <input type="text" class="username">
+            <p>Password</p>
+            <input type="password" class="pass">
+            <button type="submit" value="Login">Login</button>
+            <p>Forget Password</p>
+            <p>Create account</p>
+        </div>
+    </form>
+</body>
+</html>
